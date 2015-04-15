@@ -1,2 +1,2 @@
-# yui3PersonApp
-Custom XML Parser, YUi3 JSON Parse Example, Application uses local xml and json files.
+A Custom Plunk which shows the Json and XML capabilities of javascript.
+Uses YUI3 behind the scenes to parse JSON,XML and Sort using ModelLists.

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script data-require="underscore.js@*" data-semver="1.6.0" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <script src="http://yui.yahooapis.com/3.18.1/build/yui/yui-min.js"></script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Person Application.</div>
+      <div class="panel-body">
+        <p>Please Click on the Button to show the information you requested</p>
+        <a class="btn btn-success has-spinner" id="sbtBtn">
+          <span class="spinner"></span>
+
+        Get Person Information
+      </a>
+      </div>
+      <script id="tmpltInfo" type="x-template">
+      <table class = "table">
+      <tr> 
+         <th>Id</th>
+         <th>First Name</th>
+         <th>Last Name</th>
+      </tr>
+            {{#each person}}
+                <tr>
+                    <td>{{id}}</td > 
+                    <td> {{firstName}} </td>
+                    <td>{{lastName}}</td> 
+                </tr>
+            {{/each}}
+      </table>
+    </script>
+      <div id="personInfoTable"></div>
+    </div>
+  </body>
+
+</html>
